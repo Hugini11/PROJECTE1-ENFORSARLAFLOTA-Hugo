@@ -1,0 +1,131 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.logo {
+  color: #5b5ee1;
+  font-weight: 700;
+}
+
+.contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.panel {
+  background: #fafafa;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.panelh2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.GRUPO {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+
+.boton-start {
+  background: #5b5ee1;
+  color: #fff;
+}
+
+.boton-restart {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.boton-abandon {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* Tablero */
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(11, 40px);
+  grid-template-rows: repeat(11, 40px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cell {
+  border: 1px solid #ddd;
+  line-height: 40px;
+  font-size: 0.9rem;
+}
+
+.cell-active {
+  background: #e8e8ff;
+}
+
+.cell-active {
+  border: 2px solid #7c6ee4;
+}
+
+.row-label {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Etiqueta {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.panel-right .score {
+  font-size: 2rem;
+  color: #5b5ee1;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: #eee;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.player {
+  color: #5b5ee1;
+  font-weight: bold;
+}

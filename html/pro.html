@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle Grid</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  
+</head>
+<body>
+  <header class="header">
+    <h1><span class="logo">BattleGrid</h1>
+  </header>
+
+  <main class="contenedor1">
+    <!-- Panel izquierdo -->
+    <section class="panel panel-left">
+      <h2 class="panelh2">Configuració del Joc</h2>
+      <div class="GRUPO">
+        <label>Amplada</label>
+        <input type="number" value="10">
+        <label>Alçada</label>
+        <input type="number" value="10">
+      </div>
+
+      <div class="GRUPO">
+        <label>Num vaixells (6)</label>
+        <input type="range" min="1" max="10" value="6">
+      </div>
+
+          <!-- REVISA ESTO QUE VA MAL -->
+
+      <div class="GRUPO">
+        <label>Difficulty</label>
+        <div class="radio-groupito">
+          <label><input type="radio" name="diff"> Easy</label>
+          <label><input type="radio" name="diff" checked> Medium</label>
+          <label><input type="radio" name="diff"> Hard</label>
+        </div>
+      </div>
+      
+
+      <button class="boton-start">Start Game</button>
+      <button class="boton-restart">Restart Game</button>
+      <button class="boton-abandon">Abandon Game</button>
+    </section>
+
+    <!-- Panel central -->
+    <section class="panel panel-center">
+      <h2>El meu taulell</h2>
+      <div class="tablero">
+        <!-- Etiquetas de columnas -->
+        <div class="Etiquetas"></div>
+        <div class="Etiquetas">A</div>
+        <div class="Etiquetas">B</div>
+        <div class="Etiquetas-label">C</div>
+        <div class="Etiquetas">D</div>
+        <div class="Etiquetas">E</div>
+        <div class="Etiquetas">F</div>
+        <div class="Etiquetas">G</div>
+        <div class="Etiquetas">H</div>
+        <div class="Etiquetas">I</div>
+        <div class="Etiquetas">J</div>
+
+        <!-- Filas -->
+        <!-- Generamos 10 filas -->
+        <!-- Fila 1 -->
+        <div class="row-label">1</div>
+        <div class="cell">.</div>
+        <div class="cell-assctive">.</div>
+        <div class="cell">.</div>
+        <div class="cell"></div>
+        <div class="cell-focus"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <!-- Las demás filas (simplificadas para ejemplo) -->
+        <!-- Puedes replicar las celdas para completar -->
+      </div>
+    </section>
+
+    <!-- Panel derecho -->
+    <section class="panel panel-right">
+      <h2>Marcador</h2>
+      <p class="score">55 punts</p>
+      <h3>Estadístiques</h3>
+      <p>Jugador: <span class="player">Megacaballero</span></p>
+
+      <div class="stats">
+        <span class="tag">Hits: 5</span>
+        <span class="tag">Misses: 5</span>
+        <span class="tag">Ships Sunk: 1</span>
+      </div>
+
+      <p>Número de Jugades: <strong>6</strong></p>
+    </section>
+  </main>
+</body>
+</html>
